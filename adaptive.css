@@ -18,6 +18,7 @@ display: none;
 }
 .nav-bar__container{
   height: 70px;
+  transition: all 0.5s ease-in-out;
 }
 .nav-bar_opened{
   height: 100%;
@@ -30,6 +31,7 @@ display: none;
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
+  transition: all 0.5s ease-in-out;
 }
 nav{
   height: 100%;
@@ -40,9 +42,6 @@ nav{
 .navigation{
   display: none;
   flex-direction: column;
-}
-.nav-bar_opened .navigation{
-  display: flex;
 }
 .right-top-holder{
   display: flex;
@@ -86,6 +85,7 @@ nav a {
 }
 .top-contacts{
   align-self: flex-start;
+  height: 36px;
 }
 .header__title{
   width: 96%;
@@ -124,9 +124,7 @@ h1{
   }
   
 .advantages_inner{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  display: block;
 }
 .adv-left{
   padding-left: 0px;
@@ -160,7 +158,23 @@ span.footer-contacts__title{
 .header__button {
   font-size: 18px;
 }
+.car-readmore{
+  display: inline-flex;
+  font-size: 18px;
+  border: 1px #FAD00F solid;
+  padding: 4px;
+  }
+  .car-readmore span{
+    display: none;
+  }
+  .car-readmore__arrow{
+    margin-left: 4px;
+  }
+  .car-readmore__arrow path{
+    fill: #fff;
+  }
 }
+
 
 @media screen and (max-width: 425px){
   .header {
@@ -191,6 +205,62 @@ font-size: 32px;
     .from{
       font-size: 20px;
     }
+    .services__header{
+      display: none;
+    }
+    .services{
+      height: 420px;
+    }
+.slide__image{
+  max-height: 100%;
+  margin-right: 4%;
+}
+.slide-nav {
+  left: 52%;
+  top: 28px;
+}
+.slide__info{
+  position: relative;
+}
+.slide__title{
+  position: absolute;
+  font-size: 54px;
+  left: -60%;
+  bottom: 40px;
+  color: #fff;
+}
+.slide-nav{
+  display: none;
+}
+.slide__dark{
+  background: #1E1D1D;
+}
+.slide__yell{
+  background: #FAD00F;
+}
+.nav-bar_opened .navigation{
+  display: flex;
+  align-items: baseline;
+}
+nav>ul li {
+  margin: 8px 0px;
+}
+.drop a .drop-arrow {
+  transform: rotate(-90deg);
+}
+.drop a .drop-arrow svg path{
+  fill: #fff;
+}
+}
+
+
+@media screen and (max-width: 320px){
+  .services{
+    height: 300px;
+  }
+  .slide__title{
+    font-size: 38px;
+  }
 }
 
 
