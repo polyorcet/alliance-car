@@ -226,6 +226,9 @@ display: none;
       .mainpage-catalog__unit{
         height: 430px;
       }
+      .car__price{
+        font-size: 2.6vw;
+        }
 }
 
 @media (min-width: 1500px){

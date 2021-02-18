@@ -25,7 +25,7 @@
 }
 .mainpage-catalog__unit:hover{
   background: #FAD00F;
-  transition: all 1s ease-in;
+  transition: all 0.7s ease-in-out;
 }
 .mainpage-catalog__body{
   position: absolute;
@@ -55,20 +55,20 @@
   }
 .mainpage-catalog__unit:hover .mainpage-catalog__image{
   opacity: 0.6;
-  transition: all 1s ease-in;
+  transition: all 0.7s ease-in-out;
 }
 
 .mainpage-catalog__unit:hover .mainpage-catalog__title{
   color: #fff;
   margin-top: 5%;
-  transition: all 1.4s ease-out;
+  transition: all 0.7s ease-in-out;
 }
 .mainpage-catalog__title{
   flex: 1 1 auto;
 }
 .mainpage-catalog__unit:hover .car__price{
   color: #000;
-  transition: all 1.4s ease-out;
+  transition: all 0.7s ease-in-out;
 }
 .car__footer{
   display: flex;
@@ -98,7 +98,7 @@ align-items: center;
 .car__price{
 font-style: normal;
 font-weight: bold;
-font-size: clamp(28px, 2.6vw, 2.6vw);
+font-size: 28px;
 text-transform: uppercase;
 color: #FAD00F;
 display: inline-block;

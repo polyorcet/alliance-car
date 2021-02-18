@@ -112,8 +112,14 @@
     flex: 0 1 auto;
     }
     .header__button:hover{
-      color: #FFF;
+      background: #FAD00F;
+      color: #1D1C1C;
       text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      }
+      .header__button:hover .arrow-next path{
+fill: #1D1C1C;
+transition: all 0.3s ease-in-out;
       }
     .header__button span{
       margin-right: 14px;
@@ -122,11 +128,6 @@
       margin-top: -4px;
       margin-left: 0;
       transform: scale(0.8);
-      transition: 0.5s ease-out;
-    }
-    .header__button:hover .arrow-next{
-      margin-left: 8px;
-      transition: 0.5s ease-out;
     }
 
 
@@ -293,7 +294,7 @@ display: none;
 /* ADVANTAGES */
 .advantages{
     padding: 80px 0 60px 0;
-    background: #1D1C1C
+    background: #1D1C1C;
   }
   .advantage{
       margin-bottom: 40px;
@@ -456,11 +457,14 @@ display: none;
 .footer-menu ul{
     list-style-type: none;
     display: flex;
-    flex-flow: column wrap;
-    max-height: 170px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 160px;
+    height: 160px;
   }
   .footer-menu li{
-    margin-bottom: 18px;
+    width: 50%;
+    flex: 0 0 30%;
   }
   .footer-menu li a{
     font-style: normal;
