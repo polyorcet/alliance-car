@@ -35,10 +35,52 @@
         .custom-carousel-control{
           z-index: 100;
         }
+        .header__title-car h1{
+          font-size: 80px;
+        }
+        .catalog__power, .catalog__speed{
+          flex-direction: row;
+          align-items: center;
+        }
+        .power-icon{
+          transform: scale(0.9);
+          height: 20px;
+          margin-bottom: 0;
+        }
+        .speed-icon{
+          height: 20px;
+          margin-left: 14px;
+          margin-top: -4px;
+          transform: scale(0.8);
+          margin-bottom: 0;
+        }
 }
 
 
 @media (min-width: 768px){
+  .custom-pills{
+    padding: 50px 0 30px 0;
+  }
+  .catalog__price{
+    font-size: 24px;
+  }
+  .catalog-car-bar{
+    padding: 0 20px;
+  }
+  .catalog__title{
+      padding: 20px;
+  }
+  .catalog__title h3{
+    font-size: 50px;
+    margin-top: 0px;
+  }
+  .catalog__model{
+    font-size: 30px;
+    }
+
+  .header__title-car h1{
+    font-size: 120px;
+  }
 .advantages{
     height: 732px;
     background: #1D1C1C url(../img/advantages.png) center center no-repeat;
@@ -92,6 +134,22 @@ display: none;
 }
 
 @media (min-width: 992px){
+  .header__title-car h1{
+    font-size: 160px;
+  }
+  .car-promo{
+    height: 230px;
+  }
+  .form-section{
+    background: #E5E5E5 url(../img/form-img.jpg) right center no-repeat;
+  }
+  .car-advantage {
+    height: 70%;
+    margin: 10% 0 20% 0;
+}
+.car-advantage span{
+  font-size: 24px;
+  }
     .navbar-expand-lg .navbar-nav .custom-navbar__nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
@@ -160,6 +218,9 @@ display: none;
 }
 
 @media (min-width: 1200px){
+  .header__title-car h1{
+    font-size: 200px;
+  }
     .custom-navbar{
         background: rgba(6,6,6,0.4);
         height: 100px;
@@ -229,9 +290,16 @@ display: none;
       .car__price{
         font-size: 2.6vw;
         }
+        .custom-pills .nav-link{
+          font-size: 24px;
+            padding: .5rem 1.8rem;
+        }
 }
 
 @media (min-width: 1500px){
+  .header__title-car h1{
+    font-size: 240px;
+  }
     .sertificate{
         height: 700px;
     }

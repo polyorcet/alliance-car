@@ -14,3 +14,4 @@ anime({
   delay: anime.stagger(300),
   easing: 'easeInOutSine'
 });
+
