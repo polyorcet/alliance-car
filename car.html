@@ -11,6 +11,8 @@
   <link href="custom-css/custom.css" rel="stylesheet">
   <link href="custom-css/catalog.css" rel="stylesheet">
   <link href="custom-css/adaptive.css" rel="stylesheet">
+  <link href="custom-css/owl.carousel.min.css" rel="stylesheet">
+  <link href="custom-css/owl.theme.default.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
@@ -166,27 +168,29 @@
     <div class="h-100 custom-jumbotron" style="background-image: url(img/car-hero.png);"></div>
     <div class="container-fluid h-100">
       <div class="row h-100 justify-content-center">
-        <div class="col-12 col-xl-10">
+        <div class="col-12 col-xl-10 p-0">
           <div class="header__body h-100">
 
             <div class="header__body-layer">
               <div class="header-layer-inner">
-                <div class="car-thumb">
-                  <img src="img/car-thumb.png" alt="">
+                <div class="car-thumb" style="background-image: url(img/car-thumb.png);">
                 </div>
-                <div class="car-model">
+                <div class="car-model-wide">
                   Gallardo
                 </div>
               </div>
-
             </div>
 
             <div class="header__title header__title-car">
-              <div class="car-title__sub  align-self-end">Аренда Lamborghini Gallardo в Москве</div>
-              <h1>BENTLEY</h1>
-              <div class="header__car-price align-self-end">от 29 000 ₽/сутки</div>
+              <div class="car-title__sub"><div>Аренда Lamborghini Gallardo в Москве</div></div>
+              <h1 class="car-page__title">LAMBORGHINI</h1>
+              <div class="car-model">
+                Gallardo
+              </div>
+              <div class="header__car-price">от 29 000 ₽/сутки</div>
             </div>
-            <a class="header__button" href="">
+            <div class="header__button-wrapper header__button-wrapper-carpage">
+            <a class="header__button" href="#">
               <span>Арендовать</span>
               <div class="arrow-next"><svg width="13" height="21" viewBox="0 0 13 21" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -195,17 +199,51 @@
                     fill="white" />
                 </svg></div>
             </a>
-
+          </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="car-block">
+    <div class="container-fluid h-100">
+<div class="row h-100">
+  <div class="col-12 d-flex justify-content-center align-items-center">
+    <a class="header__button header__button-dark" href="#">
+      <span>Арендовать</span>
+      <div class="arrow-next"><svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12.7976 10.6922L2.91281 0.807373L0.92324 2.79695L8.81842 10.6921L0.911743 18.5988L2.90132 20.5884L10.808 12.6817L10.8081 12.6818L12.7976 10.6922Z"
+            fill="white" />
+        </svg></div>
+    </a>
+  </div>
+</div>
+    </div>
 
-  <section id="car-gallery">
+  </section>
 
-    <div class="container-fluid">
+
+  <section id="car-gallery" class="custom-dark">
+
+    <div class="container-fluid p-0">
+
+      <div class="row owl-carousel car-carousel owl-theme m-0">
+        <div class="car-preview">
+          <img src="img/car-gallery-thumb01.png" alt="">
+        </div>
+        <div class="car-preview">
+          <img src="img/car-gallery-thumb02.png" alt="">
+        </div>
+        <div class="car-preview">
+          <img src="img/car-gallery-thumb03.png" alt="">
+        </div>
+        <div class="car-preview">
+          <img src="img/car-gallery-thumb01.png" alt="">
+        </div>
+      </div>
 
     </div>
 
@@ -248,8 +286,11 @@
       <div class="row justify-content-between flex-column-reverse flex-sm-row">
         <div class="col-12 col-lg-6">
           <div>
-            <h4>Условия</h4>
-            <span>Стоимость аренды Lamborghini Gallardo </span>
+            <div class="inner-section__header">
+              <h4>Условия</h4>
+              <span class="inner-section__subheader">Стоимость аренды Lamborghini Gallardo </span>
+            </div>
+            
 
             <div class="prices-table">
               <div class="prices-row d-flex">
@@ -264,12 +305,24 @@
                   <span>43 000 руб.</span>
                 </div>
               </div>
+              <div class="prices-row d-flex">
+                <div class="period">14-30 суток</div>
+                <div class="price-for-period d-flex">
+                  <span>35 000 руб.</span>
+                </div>
+              </div>
+              <div class="prices-row d-flex">
+                <div class="period">от 30 суток</div>
+                <div class="price-for-period d-flex">
+                  <span>29 000 руб.</span>
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
         <div class="col-12 col-lg-4">
-          <div class="price-tag mb-3 mb-lg-0">
+          <div class="price-tag">
             от <span>29 000</span> ₽/сутки
             <p>Обеспечительный платеж 150 000 руб.
               Возвращается в день возврата автомобиля.</p>
@@ -387,6 +440,7 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="custom-js/anime.min.js"></script>
+  <script src="custom-js/owl.carousel.min.js"></script>
   <script src="custom-js/script.js"></script>
 
 

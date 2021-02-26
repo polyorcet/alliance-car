@@ -77,7 +77,10 @@
   .catalog__model{
     font-size: 30px;
     }
-
+    .header__title-car{
+      flex-direction: row;
+      padding: 0 0;
+    }
   .header__title-car h1{
     font-size: 120px;
   }
@@ -131,18 +134,98 @@ display: none;
   .mainpage-catalog__title h3{
     font-size: 50px;
   }
+  .car-model{
+    display: none;
+  }
 }
 
 @media (min-width: 992px){
+  .header__button-wrapper-carpage{
+    display: block;
+  }
+  .car-preview{
+    height: 230px;
+  }
+  .owl-nav{
+    margin-top: -230px !important;
+  }
+  .owl-nav button{
+    height: 230px;
+    margin-top: -230px;
+  }
+  .car-block{
+    display: none;
+  }
+
+  .header__title-car{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .car-title__sub{
+    justify-content: flex-end;
+    display: flex;
+    font-weight: 300;
+font-size: 24px;
+line-height: 132.19%;
+text-align: right;
+color: #FFFFFF;
+  }
+  .car-title__sub div{
+    width: 250px;
+  }
+  .header__car-price{
+    display: block;
+    font-size: 40px;
+    color: #FAD00F;
+     margin-top: -14px;
+     text-align: right;
+  }
+  .car-model-wide{
+    text-transform: uppercase;
+    margin-top: -50px;
+    font-size: 60px;
+    color: #fff;
+    display: inline-block;
+  }
+  .header__body-layer{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    left: 10%;
+    padding-top: 10%;
+  }
+  .car-thumb{
+    width: 40%;
+  }
+  .price-tag{
+    margin-bottom: 0;
+  }
+  .price-tag p{
+margin-top: 60px;
+  }
+  .price-for-period span{
+    font-size: 26px;
+  }
+  .period{
+    font-size: 26px;
+  }
+  .car-conditions h4{
+    font-size: 60px;
+  }
+  .inner-section__subheader{
+    font-size: 24px;
+  }
   .header__title-car h1{
     font-size: 160px;
   }
   .car-promo{
     height: 230px;
+    padding-top: 0px;
   }
-  .form-section{
-    background: #E5E5E5 url(../img/form-img.jpg) right center no-repeat;
-  }
+
   .car-advantage {
     height: 70%;
     margin: 10% 0 20% 0;
@@ -215,9 +298,27 @@ display: none;
     .carousel-item-custom{
         height: 700px;
        }
+       .form-section{
+        background: #E5E5E5 url(../img/form-img.jpg);
+        background-repeat: no-repeat;
+        background-position: 150% 50%;
+      }
 }
 
 @media (min-width: 1200px){
+  .form-section{
+    background: #E5E5E5 url(../img/form-img.jpg) right center no-repeat;
+  }
+  .car-preview{
+    height: 400px;
+  }
+  .owl-nav{
+    margin-top: -400px !important;
+  }
+  .owl-nav button{
+    height: 400px;
+    margin-top: -400px;
+  }
   .header__title-car h1{
     font-size: 200px;
   }
