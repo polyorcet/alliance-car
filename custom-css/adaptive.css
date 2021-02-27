@@ -137,6 +137,30 @@ display: none;
   .car-model{
     display: none;
   }
+  .slider-promoblock{
+    display: flex;
+    flex: 1 0 auto;
+  }
+  
+  .slider-promoblock div{
+  border-left: 1px solid #FAD00F;
+  padding: 0 4px;
+  height: 40px;
+  margin: 20px 0;
+  }
+  
+  .slider-promoblock div{
+    font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 132.19%;
+  text-transform: uppercase;
+  color: #fff;
+  }
+  .slider-promoblock span{
+  color: #FAD00F;
+  }
 }
 
 @media (min-width: 992px){
@@ -237,7 +261,7 @@ margin-top: 60px;
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .hero{
+    .hero, .hero-slide{
         height: 80vh;
     }
     .sertificate{
@@ -306,6 +330,15 @@ margin-top: 60px;
 }
 
 @media (min-width: 1200px){
+  .slider-promoblock div{
+  font-size: 20px;
+  }
+  .slider-promoblock div{
+    border-left: 1px solid #FAD00F;
+    padding: 0 10px;
+    height: 90px;
+    margin: 0;
+    }
   .form-section{
     background: #E5E5E5 url(../img/form-img.jpg) right center no-repeat;
   }

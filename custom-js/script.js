@@ -45,6 +45,17 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $('.hero-slider').owlCarousel({
+    loop:true,
+    nav:false,
+    autoplay:true,
+    items:1,
+    dots:false,
+    autoplayTimeout: 8000
+});
+});
+
+$(document).ready(function(){
   var mwidth = $(".car-page__title").width();
   $(".car-title__sub").width(mwidth);
   $(".header__car-price").width(mwidth);

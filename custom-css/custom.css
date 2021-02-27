@@ -4,7 +4,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none !important;
 }
-.hero{
+.hero, .hero-slide{
   position: relative;
   height: 430px;
 }
@@ -76,9 +76,12 @@
   }
   h1{
     font-weight: 700;
-    font-size: clamp(45px, 9vw, 100px);
+    font-size: clamp(38px, 9vw, 100px);
     text-transform: uppercase;
     color: #fff;
+  }
+  .car-page__title{
+    font-size: clamp(45px, 9vw, 100px);
   }
   .accent{
     color: #FAD00F
@@ -768,4 +771,8 @@ color: #fff;
 }
 .owl-theme .owl-nav [class*='owl-'] {
   margin: 0px !important;
+}
+
+.slider-promoblock{
+  display: none;
 }
