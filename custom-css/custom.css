@@ -545,7 +545,9 @@ display: none;
 .custom-pills .nav-link{
   font-weight: 100;
   color: #fff;
+  border: solid 1px rgba(0,0,0,0);
 }
+
 .custom-pills .nav-link.active{
 border: #FFD335 solid 1px;
 border-radius: 6px;

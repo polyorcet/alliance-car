@@ -1,4 +1,20 @@
 @media (min-width: 576px){
+  .catalog-car:hover, .catalog-car:hover .catalog-car-bar{
+    background: #FAD00F;
+    justify-content: flex-end;
+    transition: all 0.7s ease-in-out;
+  }
+  .catalog-car:hover .catalog__values, .catalog-car:hover .catalog__price{
+  display: none;  
+  
+  }
+  .catalog-car:hover .catalog__title h3, .catalog-car:hover .catalog__model{
+  color: #1D1C1C;
+  transition: all 0.7s ease-in-out;
+  }
+  .catalog-car:hover .catalog-more{
+    display: flex;
+  }
     .mainpage-catalog__body{
         padding: 8%;
       }
