@@ -22,6 +22,7 @@ $(document).ready(function(){
     nav:true,
     autoplay:true,
     items:3,
+    autoplayTimeout:3000,
     responsiveClass:true,
     navText:["<div class='nav-btn prev-slide'><img src='/img/prev-slide.svg'></div>","<div class='nav-btn next-slide'><img src='/img/next-slide.svg'></div>"],
     responsive : {
