@@ -778,3 +778,33 @@ color: #fff;
 .slider-promoblock{
   display: none;
 }
+
+
+/* owl  */
+.car-carousel {
+  position: relative;
+}
+.car-carousel .owl-dots {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+/* .car-carousel .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+
+} */
+#hero .owl-dots {
+  display: flex;
+}
+#hero .owl-dots span {
+  background: #FAD00F;
+  margin: 0px 7px;
+  border-radius: 50%;
+}
+#hero .owl-dots .active span {
+  background: yellow;
+  width: 13px;
+  height: 13px;
+}
+/* owl  */
