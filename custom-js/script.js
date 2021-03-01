@@ -20,7 +20,7 @@ $(document).ready(function(){
   $('.car-carousel').owlCarousel({
     loop:true,
     nav:false,
-    autoplay:false,
+    autoplay:true,
     items:1,
     dots:true,
     autoplayTimeout:4000,
