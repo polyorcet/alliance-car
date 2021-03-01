@@ -19,12 +19,14 @@ anime({
 $(document).ready(function(){
   $('.car-carousel').owlCarousel({
     loop:true,
-    nav:false,
+    nav:true,
     autoplay:true,
     items:1,
     dots:true,
     autoplayTimeout:4000,
     responsiveClass:true,
+    autoHeight :true,
+    navText: '',
     navText:["<div class='nav-btn prev-slide'><img src='/img/prev-slide.svg'></div>","<div class='nav-btn next-slide'><img src='/img/next-slide.svg'></div>"],
     responsive : {
       0 : {
@@ -32,15 +34,20 @@ $(document).ready(function(){
         nav:false,
         dots:false
       },
+      420 : {
+        items:1,
+        nav:true,
+        dots:false
+      },
       768 : {
         items:1,
-        nav:false,
+        nav:true,
         dots:false
       },
       992 : {
         items:1,
-        nav:false,
-        dots:false
+        nav:true,
+        dots:false       
       }
   }
 });

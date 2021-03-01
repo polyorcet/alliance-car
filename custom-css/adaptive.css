@@ -1,4 +1,10 @@
 @media (min-width: 576px){
+  .car-carousel .owl-prev {
+    right: 90px;
+  }
+  .car-carousel .owl-next {
+    right: 40px;
+  }
   .catalog-car:hover, .catalog-car:hover .catalog-car-bar{
     background: #FAD00F;
     justify-content: flex-end;
@@ -74,6 +80,31 @@
 
 
 @media (min-width: 768px){
+  .car-carousel .next-slide{
+    /* background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%); */
+    background: linear-gradient(270deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 95%);
+  }
+  .car-carousel .prev-slide{
+    background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 95%);
+  }
+  .car-carousel .owl-next {
+    right: 0px;
+}
+  .car-carousel .owl-nav button {
+    top: 0;
+    bottom: auto;
+    width: 35px;
+    height: 100%;
+  }
+  .car-carousel .prev-slide {
+    height: 100%;
+  }
+  .car-carousel .next-slide {
+    height: 100%;
+  }
+  .car-carousel .owl-prev{
+    left: 0px;
+  }
   .custom-pills{
     padding: 50px 0 30px 0;
   }
@@ -180,19 +211,28 @@ display: none;
 }
 
 @media (min-width: 992px){
+  .car-carousel .owl-nav button {
+    top: 0;
+    bottom: auto;
+    width: 80px;
+    height: 100%;
+  }
+  .car-carousel .nav-btn img {
+    height: 60px;
+  }
   .header__button-wrapper-carpage{
     display: block;
   }
   .car-preview{
     height: 230px;
   }
-  .owl-nav{
+  /* .owl-nav{
     margin-top: -230px !important;
-  }
-  .owl-nav button{
+  } */
+  /* .owl-nav button{
     height: 230px;
     margin-top: -230px;
-  }
+  } */
   .car-block{
     display: none;
   }
@@ -278,7 +318,7 @@ margin-top: 60px;
         padding-left: 1rem;
     }
     .hero, .hero-slide{
-        height: 80vh;
+        min-height: 80vh;
     }
     .sertificate{
         height: 660px;
@@ -361,13 +401,16 @@ margin-top: 60px;
   .car-preview{
     height: 400px;
   }
-  .owl-nav{
-    margin-top: -400px !important;
+  .car-carousel .nav-btn img {
+    height: 60px;
   }
-  .owl-nav button{
+  /* .owl-nav{
+    margin-top: -400px !important;
+  } */
+  /* .owl-nav button{
     height: 400px;
     margin-top: -400px;
-  }
+  } */
   .header__title-car h1{
     font-size: 200px;
   }

@@ -6,7 +6,7 @@
 }
 .hero, .hero-slide{
   position: relative;
-  height: 430px;
+  min-height: 430px;
 }
 .custom-jumbotron{
   position: absolute;
@@ -76,7 +76,7 @@
   }
   h1{
     font-weight: 700;
-    font-size: clamp(38px, 9vw, 100px);
+    font-size: clamp(38px, 7vw, 100px);
     text-transform: uppercase;
     color: #fff;
   }
@@ -723,48 +723,51 @@ color: #fff;
   margin-bottom: 60px;
 }
 
-.owl-nav{
-  position: absolute;
+.car-carousel .owl-nav{
+  /* position: absolute; */
   width: 100%;
 }
-.owl-nav button{
+.car-carousel .owl-nav button{
   position: absolute;
-  width: 100px;
+  /* top: 95px; */
+  bottom: 25px;
+  width: 40px;
   box-sizing: border-box;
   border-radius: 0;
+  /* height: 100%; */
 }
-.owl-next{
-  right: 0;
+.car-carousel .owl-next{
+  right: 5px;
 }
-.owl-prev{
-  left: 0;
+.car-carousel .owl-prev{
+  right: 50px;
 }
-.owl-nav button:hover{
+.car-carousel .owl-nav button:hover{
   background: none !important;
 }
-.next-slide{
-  height: 100%;
+.car-carousel .next-slide{
+  /* height: 100%; */
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgb(0,0,0);
-  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%);
+  /* background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%); */
 }
-.prev-slide{
-  height: 100%;
+.car-carousel .prev-slide{
+  /* height: 100%; */
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%);
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%); */
 }
-.next-slide:hover{
+.car-carousel .next-slide:hover{
   background: rgb(0,0,0);
   background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
-.prev-slide:hover{
+.car-carousel .prev-slide:hover{
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
@@ -777,13 +780,21 @@ color: #fff;
 
 .slider-promoblock{
   display: none;
+  margin-bottom: 20px;
 }
 
 
 /* owl  */
-/* .car-carousel {
+.car-carousel {
   position: relative;
 }
+.car-carousel .owl-nav {
+  margin-top: 0;
+}
+.car-carousel .nav-btn img {
+  height: 35px;
+}
+/* 
 .car-carousel .owl-dots {
   position: absolute;
   right: 10px;
