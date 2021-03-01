@@ -25,22 +25,22 @@ $(document).ready(function(){
     dots:true,
     autoplayTimeout:4000,
     responsiveClass:true,
-    // navText:["<div class='nav-btn prev-slide'><img src='/img/prev-slide.svg'></div>","<div class='nav-btn next-slide'><img src='/img/next-slide.svg'></div>"],
+    navText:["<div class='nav-btn prev-slide'><img src='/img/prev-slide.svg'></div>","<div class='nav-btn next-slide'><img src='/img/next-slide.svg'></div>"],
     responsive : {
       0 : {
         items:1,
         nav:false,
-        dots:true
+        dots:false
       },
       768 : {
         items:1,
         nav:false,
-        dots:true
+        dots:false
       },
       992 : {
         items:1,
         nav:false,
-        dots:true
+        dots:false
       }
   }
 });

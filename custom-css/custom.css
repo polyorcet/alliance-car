@@ -781,7 +781,7 @@ color: #fff;
 
 
 /* owl  */
-.car-carousel {
+/* .car-carousel {
   position: relative;
 }
 .car-carousel .owl-dots {
@@ -789,12 +789,12 @@ color: #fff;
   right: 10px;
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
-}
+} */
 /* .car-carousel .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
 
 } */
-#hero .owl-dots {
+/* #hero .owl-dots {
   display: flex;
 }
 #hero .owl-dots span {
@@ -806,5 +806,5 @@ color: #fff;
   background: yellow;
   width: 13px;
   height: 13px;
-}
+} */
 /* owl  */
