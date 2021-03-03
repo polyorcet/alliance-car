@@ -1,3 +1,6 @@
+html, body {
+  height: 100vh;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +9,7 @@
 }
 .hero, .hero-slide{
   position: relative;
+  height: 1px;
   min-height: 430px;
 }
 .custom-jumbotron{
@@ -104,6 +108,11 @@
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
     line-height: 0.8;
     display: inline-block;
+  }
+  .title-rent-price{
+    font-size: 40px;
+    color: #FAD00F;
+    line-height: 120px;
   }
   .header__car-price{
     display: none;
@@ -219,6 +228,13 @@ transition: all 0.3s ease-in-out;
     margin-top: -3px;
     transform: scale(0.8);
   }
+  .super_menu_subtoggle .drop-arrow{
+    transform: rotate(-90deg);
+  }
+.nav-link_back .drop-arrow{
+  transform: rotate(90deg);
+}
+
 .custom-navbar__nav-link:hover{
     color: #FAD00F;
   }
@@ -341,6 +357,9 @@ display: none;
     text-transform: uppercase;
     color: #EEEEEE;
     }
+    .advantage-light span{
+      color: #1D1C1C;
+    }
     .car-advantage span{
       font-size: 20px;
       }
@@ -384,6 +403,9 @@ display: none;
     align-items: stretch;
     height: 100%;
 }
+.car-slide__body .slide__image img{
+  width: 100%;
+}
 .slide__image{
   width: 40%;
   margin-right: 4%;
@@ -406,6 +428,22 @@ display: none;
   text-transform: uppercase;
   color: #1D1C1C;
   }
+  .car-slide__body .slide__image{
+    width: 40%;
+    margin-right: 4%;
+    flex: 0 0 40%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .cars-slider .slide__title{
+    line-height: 36px;
+    }
+  .cars-slider .slide__title a{
+    font-size: 36px;
+    text-transform: none;
+    color: #1D1C1C;
+    }
   .slide__announce{
   font-weight: 300;
   font-size: 16px;
@@ -819,3 +857,15 @@ color: #fff;
   height: 13px;
 } */
 /* owl  */
+
+.content-img{
+  width: 100%;
+}
+
+.section-slider-title{
+font-size: 70px;
+line-height: 124.5%;
+text-transform: uppercase;
+margin-bottom: 80px;
+font-weight: bold;
+}

@@ -39,6 +39,10 @@
           top: 28px;
           z-index: 100;
         }
+        .car-slider-navs{
+          left: 0;
+          top: 0;
+        }
         .custom-carousel-control{
           display: inline-flex;
           justify-content: center;
@@ -177,6 +181,9 @@ display: none;
     left: 54%;
     width: 100px;
     top: 58px;
+  }
+  .car-slider-navs{
+    top: 0;
   }
   .mainpage-catalog__title h3{
     font-size: 50px;
@@ -318,6 +325,7 @@ margin-top: 60px;
         padding-left: 1rem;
     }
     .hero, .hero-slide{
+      height: 1px;
         min-height: 80vh;
     }
     .sertificate{
@@ -383,6 +391,9 @@ margin-top: 60px;
         background-repeat: no-repeat;
         background-position: 150% 50%;
       }
+      .form-section-wedding{
+        background: #E5E5E5 url(../img/form-img-wedding.jpg);
+      }
 }
 
 @media (min-width: 1200px){
@@ -397,6 +408,9 @@ margin-top: 60px;
     }
   .form-section{
     background: #E5E5E5 url(../img/form-img.jpg) right center no-repeat;
+  }
+  .form-section-wedding{
+    background: #E5E5E5 url(../img/form-img-wedding.jpg) right center no-repeat;
   }
   .car-preview{
     height: 400px;
@@ -418,6 +432,7 @@ margin-top: 60px;
         background: rgba(6,6,6,0.4);
         height: 100px;
     }
+
     .dropdown:hover>.dropdown-menu {
         display: block;
       }
@@ -467,6 +482,9 @@ margin-top: 60px;
     }
     .carousel-item-custom{
         height: 800px;
+       }
+       .cars-slider{
+        height: 540px;
        }
        .slide__announce {
         font-weight: 300;

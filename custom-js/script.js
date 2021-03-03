@@ -21,8 +21,8 @@ $(document).ready(function(){
     loop:true,
     nav:true,
     autoplay:true,
-    items:1,
-    dots:true,
+    items:3,
+    dots:false,
     autoplayTimeout:4000,
     responsiveClass:true,
     autoHeight :true,
@@ -45,7 +45,7 @@ $(document).ready(function(){
         dots:false
       },
       992 : {
-        items:1,
+        items:3,
         nav:true,
         dots:false       
       }
@@ -74,4 +74,29 @@ $(window).resize(function(){
   var mwidth = $(".car-page__title").width();
   $(".car-title__sub").width(mwidth);
   $(".header__car-price").width(mwidth);
+});
+
+
+$(document).ready(function(){
+  $(".super_menu_toggler").click(function(){
+    $(this).toggleClass('collapsed');
+    $(".super_menu").toggleClass('hidden_menu');
+  });
+
+  /* Подменю */
+  $(".super_menu_subtoggle").click(function(){
+    var textlink = $(this).data('textlink');
+    $(this).toggleClass('nav-link_back');
+    if (!$(this).hasClass("nav-link_back")) {
+      $(this).children('span').text(textlink);
+    }
+    $(".nav-link_back span").text('назад');
+    $('.nav-link').not(this).each(function(){
+      $(this).toggle();
+   });
+
+    $(this).next(".super_sub").toggleClass('hidden_sub');
+  });
+  /* Подменю */
+
 });
