@@ -577,6 +577,28 @@ display: none;
 
 
 /* Табы */
+.custom-pills-header .header__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 132.19%;
+  letter-spacing: 0.075em;
+  color: #FAD00F;
+  border: 1px solid #FAD00F;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 10px 6px 8px 6px;
+  align-content: flex-start;
+}
+.custom-pills-header li{
+margin: 0 4px;
+}
+.custom-pills-header .header__button span {
+  margin-right: 0;
+}
 .custom-pills{
   padding: 30px 0 10px 0;
 }
@@ -591,6 +613,9 @@ border: #FFD335 solid 1px;
 border-radius: 6px;
 background: none;
 }
+.custom-pills-header .nav-link, .custom-pills-header .nav-link.active{
+  border-radius: 50px;
+  }
   /* Автомобиль */
   .header__body-layer{
     position: absolute;

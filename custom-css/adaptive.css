@@ -1,4 +1,16 @@
+
+
 @media (min-width: 576px){
+  .custom-pills-header .header__button {
+    font-size: 16px;
+    padding: 10px 14px 8px 14px;
+  }
+  .custom-pills-header li {
+    margin: 0 10px;
+  }
+  .custom-pills-header .header__button span {
+    margin-right: 14px;
+}
   .car-carousel .owl-prev {
     right: 90px;
   }
@@ -505,6 +517,28 @@ margin-top: 60px;
           font-size: 24px;
             padding: .5rem 1.8rem;
         }
+        .custom-pills-header .nav-link{
+          padding: 1rem 1.8rem;
+        }
+        .custom-pills-header .header__button span{
+          margin-right: 0;
+        }
+        .custom-pills-header .header__button {
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-between;
+          font-weight: 300;
+          font-size: 24px;
+          line-height: 132.19%;
+          letter-spacing: 0.075em;
+          color: #FAD00F;
+          border: 1px solid #FAD00F;
+          text-decoration: none;
+          text-transform: uppercase;
+          border-radius: 50px;
+          padding: 12px 30px 11px 38px;
+          align-content: flex-start;
+      }
 }
 
 @media (min-width: 1500px){
