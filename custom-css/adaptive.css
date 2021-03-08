@@ -1,5 +1,9 @@
 
-
+@media (min-width: 425px){
+  .hero, .hero-slide{
+    height: 1px;
+  }
+}
 @media (min-width: 576px){
   .custom-pills-header .header__button {
     font-size: 16px;
@@ -8,9 +12,6 @@
   .custom-pills-header li {
     margin: 0 10px;
   }
-  .custom-pills-header .header__button span {
-    margin-right: 14px;
-}
   .car-carousel .owl-prev {
     right: 90px;
   }
@@ -96,6 +97,10 @@
 
 
 @media (min-width: 768px){
+
+  .hero, .hero-slide{
+    min-height: 80vh;
+  }
   .car-carousel .next-slide{
     /* background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%); */
     background: linear-gradient(270deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 95%);
@@ -152,7 +157,7 @@
     background: #1D1C1C url(../img/advantages.png) center center no-repeat;
   }
 
-.hero:after{
+/*.hero:after{
   content: "";
   position: absolute;
   width: 30px;
@@ -163,7 +168,7 @@
   margin-top: -15px;
   left: 50%;
   margin-left: -15px;
-  }
+  }*/
   .hero-inner:after{
 display: none;
     }
@@ -242,16 +247,19 @@ display: none;
   .header__button-wrapper-carpage{
     display: block;
   }
-  .car-preview{
+  .car-carousel .owl-nav button{
+    position: absolute;
+  }
+  #car-gallery, .car-preview{
     height: 230px;
   }
-  /* .owl-nav{
-    margin-top: -230px !important;
-  } */
-  /* .owl-nav button{
-    height: 230px;
+  .car-carousel .owl-nav{
     margin-top: -230px;
-  } */
+    height: auto;
+  }
+  .car-carousel .owl-nav button{
+   height: 230px;
+  }
   .car-block{
     display: none;
   }
@@ -320,26 +328,11 @@ margin-top: 60px;
   .header__title-car h1{
     font-size: 160px;
   }
-  .car-promo{
-    height: 230px;
-    padding-top: 0px;
-  }
-
-  .car-advantage {
-    height: 70%;
-    margin: 10% 0 20% 0;
-}
-.car-advantage span{
-  font-size: 24px;
-  }
     .navbar-expand-lg .navbar-nav .custom-navbar__nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .hero, .hero-slide{
-      height: 1px;
-        min-height: 80vh;
-    }
+
     .sertificate{
         height: 660px;
     }
@@ -406,9 +399,29 @@ margin-top: 60px;
       .form-section-wedding{
         background: #E5E5E5 url(../img/form-img-wedding.jpg);
       }
+      .car-advantage {
+        height: 60%;
+        margin: 4% 0 6% 0;
+        padding: 0 6px;
+    }
 }
 
 @media (min-width: 1200px){
+  .car-promo{
+    height: 180px;
+    padding-top: 0px;
+  }
+  .car-advantage span{
+    font-size: 24px;
+    }
+    .car-advantage {
+      height: 70%;
+      margin: 10% 0 20% 0;
+      padding: 0 20px;
+  }
+  .super_menu_toggler{
+    display: none;
+  }
   .slider-promoblock div{
   font-size: 20px;
   }
@@ -424,19 +437,20 @@ margin-top: 60px;
   .form-section-wedding{
     background: #E5E5E5 url(../img/form-img-wedding.jpg) right center no-repeat;
   }
-  .car-preview{
+  #car-gallery, .car-preview{
     height: 400px;
+    min-height: 400px;
+  }
+  .car-carousel .owl-nav{
+    margin-top: -400px;
+    height: auto;
+  }
+  .car-carousel .owl-nav button{
+   height: 400px;
   }
   .car-carousel .nav-btn img {
     height: 60px;
   }
-  /* .owl-nav{
-    margin-top: -400px !important;
-  } */
-  /* .owl-nav button{
-    height: 400px;
-    margin-top: -400px;
-  } */
   .header__title-car h1{
     font-size: 200px;
   }
@@ -526,18 +540,19 @@ margin-top: 60px;
         .custom-pills-header .header__button {
           display: inline-flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: center;
           font-weight: 300;
-          font-size: 24px;
+          font-size: 22px;
           line-height: 132.19%;
           letter-spacing: 0.075em;
-          color: #FAD00F;
+          color: #FFF;
           border: 1px solid #FAD00F;
           text-decoration: none;
           text-transform: uppercase;
           border-radius: 50px;
-          padding: 12px 30px 11px 38px;
+          padding: 12px 34px 11px 34px;
           align-content: flex-start;
+          min-width: 306px;
       }
 }
 

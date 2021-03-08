@@ -15,7 +15,18 @@ anime({
   easing: 'easeInOutSine'
 });
 
+anime({
+  targets:'.custom-pills-header .nav-item',
+  translateY: [20, 0],
+  opacity: [0, 1],
+  duration: 500,
+  delay: anime.stagger(200),
+  easing: 'easeInOutSine'
+});
 
+
+
+/* == Карусель-галерея == */
 $(document).ready(function(){
   $('.car-carousel').owlCarousel({
     loop:true,
@@ -25,8 +36,6 @@ $(document).ready(function(){
     dots:false,
     autoplayTimeout:4000,
     responsiveClass:true,
-    autoHeight :true,
-    navText: '',
     navText:["<div class='nav-btn prev-slide'><img src='/img/prev-slide.svg'></div>","<div class='nav-btn next-slide'><img src='/img/next-slide.svg'></div>"],
     responsive : {
       0 : {
@@ -52,8 +61,10 @@ $(document).ready(function(){
   }
 });
 });
+/* == Карусель-галерея == */
 
 
+/* == Подстройка титула в шапке - страница авто == */
 $(document).ready(function(){
   var mwidth = $(".car-page__title").width();
   $(".car-title__sub").width(mwidth);
@@ -65,12 +76,45 @@ $(window).resize(function(){
   $(".car-title__sub").width(mwidth);
   $(".header__car-price").width(mwidth);
 });
+/* == Подстройка титула в шапке - страница авто == */
 
 
 
 /* == Новое меню == */
 
+$(document).ready(function() { 
+  var windowWidth = $(window).width();
+  if (windowWidth < 1200){
+    $("#topMenu").addClass("super_menu");
+    $("#topMenu").addClass("hidden_menu");
+    $(".nav-item").removeClass("dropdown");
+    $(".dropdown-menu-custom").removeClass("dropdown-menu");
+  }
+  else {
+    $("#topMenu").removeClass("super_menu");
+    $("#topMenu").removeClass("hidden_menu");
+    $(".nav-item").addClass("dropdown");
+    $(".dropdown-menu-custom").addClass("dropdown-menu");
+  } 
+$(window).resize(function(){
+  var windowWidth = $(window).width();
+  if (windowWidth < 1200){
+    $("#topMenu").addClass("super_menu");
+    $("#topMenu").addClass("hidden_menu");
+    $(".nav-item").removeClass("dropdown");
+    $(".dropdown-menu-custom").removeClass("dropdown-menu");
+  }
+  else {
+    $("#topMenu").removeClass("super_menu");
+    $("#topMenu").removeClass("hidden_menu");
+    $(".nav-item").addClass("dropdown");
+    $(".dropdown-menu-custom").addClass("dropdown-menu");
+  }
+  });
+});
+
 $(document).ready(function(){
+  
   $(".super_menu_toggler").click(function(){
     $(this).toggleClass('collapsed');
     $(".super_menu").toggleClass('hidden_menu');
@@ -78,6 +122,7 @@ $(document).ready(function(){
 
   /* Подменю */
   $(".super_menu_subtoggle").click(function(){
+    $('#topmenuContacts').toggle();
     var textlink = $(this).data('textlink');
     $(this).toggleClass('nav-link_back');
     if (!$(this).hasClass("nav-link_back")) {

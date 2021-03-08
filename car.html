@@ -27,19 +27,20 @@
 
       <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
 
-      <a href="#" class="navbar-toggler custom-hanburger collapsed" data-toggle="collapse" data-target="#TopNavbar"
-        aria-controls="TopNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <a href="#" class="super_menu_toggler collapsed">
         <div class="hamburger-bar"></div>
         <div class="hamburger-bar"></div>
         <div class="hamburger-bar"></div>
       </a>
 
-      <div class="collapse navbar-collapse" id="TopNavbar">
+      <div id="topMenu" class="super_menu hidden_menu navbar-collapse">
+
         <ul class="navbar-nav mx-auto mt-xl-0 mt-4">
 
-          <li class="nav-item  dropdown">
-            <a href="#" class="nav-link custom-dropdown-toggle dropdown-toggle custom-navbar__nav-link"
-              data-toggle="dropdown">О нас<div class="drop-arrow">
+          <li class="nav-item super_menu_li dropdown">
+
+            <a href="#" class="nav-link custom-dropdown-toggle super_menu_subtoggle  dropdown-toggle custom-navbar__nav-link"
+              data-toggle="dropdown" data-textlink="О нас"><span>О нас</span><div class="drop-arrow">
                 <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M13.7933 4.00995C14.2619 3.54132 14.2619 2.78153 13.7933 2.3129C13.3247 1.84427 12.5649 1.84427 12.0962 2.3129L7.66468 6.74447L3.32399 2.40377C2.85536 1.93514 2.09556 1.93514 1.62693 2.40377C1.1583 2.8724 1.1583 3.6322 1.62693 4.10083L6.81613 9.29003C7.19692 9.67082 7.76994 9.74219 8.2228 9.50416C8.2458 9.49208 8.26849 9.47919 8.29083 9.46551C8.36999 9.41702 8.44474 9.35851 8.51327 9.28999L13.7933 4.00995Z"
@@ -49,17 +50,17 @@
                     fill="#FAD00F" />
                 </svg>
               </div></a>
-            <ul class="dropdown-menu dropdown-menu-custom dropdown-menu-center">
-
+            <ul class="dropdown-menu dropdown-menu-custom dropdown-menu-center super_sub hidden_sub">
               <li><a href="">История</a></li>
               <li><a href="">Почему аренда?</a></li>
               <li><a href="">Alliance Rental</a></li>
             </ul>
           </li>
 
-          <li class="nav-item  dropdown">
-            <a href="#" class="nav-link custom-dropdown-toggle dropdown-toggle custom-navbar__nav-link"
-              data-toggle="dropdown">Автопарк<div class="drop-arrow">
+          <li class="nav-item super_menu_li dropdown">
+
+            <a href="#" class="nav-link custom-dropdown-toggle super_menu_subtoggle  dropdown-toggle custom-navbar__nav-link"
+              data-toggle="dropdown" data-textlink="Автопарк"><span>Автопарк</span><div class="drop-arrow">
                 <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M13.7933 4.00995C14.2619 3.54132 14.2619 2.78153 13.7933 2.3129C13.3247 1.84427 12.5649 1.84427 12.0962 2.3129L7.66468 6.74447L3.32399 2.40377C2.85536 1.93514 2.09556 1.93514 1.62693 2.40377C1.1583 2.8724 1.1583 3.6322 1.62693 4.10083L6.81613 9.29003C7.19692 9.67082 7.76994 9.74219 8.2228 9.50416C8.2458 9.49208 8.26849 9.47919 8.29083 9.46551C8.36999 9.41702 8.44474 9.35851 8.51327 9.28999L13.7933 4.00995Z"
@@ -69,15 +70,13 @@
                     fill="#FAD00F" />
                 </svg>
               </div></a>
-
-            <ul class="dropdown-menu dropdown-menu-custom dropdown-menu-center">
-
+            <ul class="dropdown-menu dropdown-menu-custom dropdown-menu-center super_sub hidden_sub">
               <li><a href="">Lamborghini</a></li>
               <li><a href="">Bentley</a></li>
               <li><a href="">Rolls Royce</a></li>
             </ul>
-
           </li>
+
           <li class="nav-item">
             <a class="nav-link custom-navbar__nav-link" href="#">Услуги</a>
           </li>
@@ -96,9 +95,11 @@
           <li class="nav-item">
             <a class="nav-link custom-navbar__nav-link" href="#">Контакты</a>
           </li>
+
         </ul>
 
-        <div class="dropdown show">
+        <!-- Контакты topMenu -->
+        <div class="dropdown show" id="topmenuContacts">
           <a class="custom-dropdown-toggle dropdown-toggle top-contacts__phone" href="#" role="button"
             id="dropdownTopContacts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
@@ -155,12 +156,10 @@
             </div>
           </div>
         </div>
-
+        <!-- Контакты topMenu -->
 
       </div>
     </nav>
-
-
 
 
 
@@ -210,6 +209,8 @@
     
   </section>
 
+
+  <!-- max 991px -->
   <section class="car-block">
     <div class="container-fluid h-100">
 <div class="row h-100">
@@ -225,11 +226,12 @@
     </a>
   </div>
 </div>
-    </div>
+</div>
+</section>
+<!-- max 991px -->
 
-  </section>
 
-
+<!-- Галерея -->
   <section id="car-gallery" class="custom-dark">
 
     <div class="container-fluid p-0">
@@ -252,7 +254,7 @@
     </div>
 
   </section>
-
+<!-- Галерея -->
 
   <section id="car-promo" class="car-promo custom-dark">
     <div class="container h-100">

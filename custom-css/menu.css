@@ -1,3 +1,115 @@
+/* МЕНЮ */
+.custom-navbar{
+  background: rgba(6,6,6,0.8);
+  height: auto;
+}
+.hamburger-bar{
+height: 1px;
+width: 30px;
+background: #fff;
+}
+.hamburger-bar:first-child{
+transform: rotate(45deg);
+transition: all 0.3s ease-in-out;
+}
+.hamburger-bar:last-child{
+transform: rotate(-45deg);
+transition: all 0.3s ease-in-out;
+}
+.hamburger-bar:nth-child(2){
+display: none;
+}
+.collapsed .hamburger-bar:first-child{
+transform: rotate(0deg);
+transition: all 0.3s ease-in-out;
+}
+.collapsed .hamburger-bar:last-child{
+transform: rotate(0deg);
+transition: all 0.3s ease-in-out;
+}
+.collapsed .hamburger-bar{
+margin: 8px 0;
+}
+.collapsed .hamburger-bar:nth-child(2){
+display: block;
+}
+.custom-navbar__nav-link{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.drop-arrow{
+  margin-left: 8px;
+  margin-top: -3px;
+  transform: scale(0.8);
+}
+.nav-link_back .drop-arrow{
+transform: rotate(90deg);
+}
+.custom-navbar__nav-link:hover{
+  color: #FAD00F;
+}
+.dropdown-menu-custom a{
+  color: #BFBFBF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.dropdown-menu-custom a:hover{
+color: #fff;
+}
+.dropdown-menu-custom{
+background: none;
+}
+.top-contacts__phone{
+display: flex;
+align-items: center;
+margin-top: 20px;
+}
+.dropdown-contacts{
+background: none;
+position: relative;
+display: block;
+padding: 0;
+margin: 0;
+}
+.dropdown-contacts span{
+line-height: 0.5;
+color: #FFFFFF;
+}
+.dropdown-contacts>div{
+margin: 6px 0;
+}
+
+.top-contacts__phone span{
+font-style: normal;
+font-size: 24px;
+line-height: 37px;
+text-align: right;
+letter-spacing: 0.045em;
+color: #FFFFFF;
+text-decoration: none;
+}
+.top-contacts_drop-arrow{
+  margin-left: 12px;
+  display: none;
+}
+.custom-dropdown-toggle:hover{
+  text-decoration: none;
+}
+.custom-dropdown-toggle::after{
+display: none;
+}
+/* МЕНЮ */
+
+
+/* КАСТОМНОЕ МОБИЛЬНОЕ МЕНЮ */
+.super_menu_toggler{
+  display: block;
+}
 .super_menu{
   position: absolute;
   width: 100%;
@@ -24,4 +136,15 @@
 .super_menu .hidden_sub{
   left: -100%;
   transition: all ease-in 0.5s;
+}
+.super_menu_subtoggle .drop-arrow{
+  transform: rotate(-90deg);
+}
+/* КАСТОМНОЕ МОБИЛЬНОЕ МЕНЮ */
+
+
+@media (min-width: 1200px){
+  .super_menu_subtoggle .drop-arrow{
+    transform: rotate(0deg);
+  }
 }
