@@ -3,6 +3,10 @@
   .hero, .hero-slide{
     height: 1px;
   }
+  .simple-content p, .simple-content li{
+    font-size: 18px;
+    line-height: 1.8;
+    }
 }
 @media (min-width: 576px){
   .custom-pills-header .header__button {
