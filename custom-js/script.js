@@ -130,10 +130,15 @@ $(document).ready(function(){
     }
     $(".nav-link_back span").text('назад');
     $('.super_menu .nav-link').not(this).each(function(){
-      $(this).toggle();
+      $(this).fadeToggle(300);
    });
-
-    $(this).next(".super_sub").toggleClass('hidden_sub');
+    
+    if ($(this).next(".super_sub").hasClass("hidden_sub")) {
+          $(this).next(".super_sub").show().removeClass('hidden_sub');
+        } else {
+          $(this).next(".super_sub").hide().addClass('hidden_sub');
+        }
+/* $(this).next(".super_sub").toggleClass('hidden_sub'); */
   });
   /* Подменю */
 
