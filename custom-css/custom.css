@@ -87,6 +87,29 @@ margin-bottom: 36px;
   padding: 18px 36px 18px 36px;
   text-decoration: none;
   }
+
+  .slide__announce .more-detailes{
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 132.19%;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: #1D1C1C;
+  padding: 10px 0px;
+  text-decoration: none;
+  margin-top: 40px;
+  }
+  .slide__announce .more-detailes .arrow-more{
+    transform: scale(0.6);
+    margin-left: 6px;
+  }
+
+
   .more-detailes_dark{
   color: #fff;
   }
@@ -367,7 +390,9 @@ transition: all 0.3s ease-in-out;
   font-size: 16px;
   line-height: 121.69%;
   color: #858585;
-  display: none;
+  }
+  .slide__announce-text{
+    display: none;
   }
   .slide__announce p{
     margin-bottom: 30px;
@@ -750,23 +775,14 @@ color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(0,0,0);
 }
 .car-carousel .prev-slide{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(0,0,0);
 }
-.car-carousel .next-slide:hover{
-  background: rgb(0,0,0);
-  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-}
-.car-carousel .prev-slide:hover{
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-}
+
 .owl-carousel .owl-item img {
   height: 100%;
 }

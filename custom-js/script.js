@@ -129,7 +129,7 @@ $(document).ready(function(){
       $(this).children('span').text(textlink);
     }
     $(".nav-link_back span").text('назад');
-    $('.nav-link').not(this).each(function(){
+    $('.super_menu .nav-link').not(this).each(function(){
       $(this).toggle();
    });
 

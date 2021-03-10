@@ -44,7 +44,7 @@
       .mainpage-catalog__title h3{
         font-size: 60px;
       }
-      .slide__announce{
+      .slide__announce-text{
         display: block;
         }
         .custom-slider-navs{
@@ -101,7 +101,16 @@
 
 
 @media (min-width: 768px){
-
+  .slide__announce .more-detailes{
+  font-size: 18px;
+  padding: 18px 36px 18px 36px;
+  border: 1px solid #FAD00F;
+  margin-top: 0;
+  }
+  .slide__announce .more-detailes .arrow-more{
+    transform: scale(1);
+    margin-left: 18px;
+  }
   .hero, .hero-slide{
     min-height: 80vh;
   }
@@ -111,6 +120,12 @@
   }
   .car-carousel .prev-slide{
     background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 95%);
+  }
+  .car-carousel .next-slide:hover{
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  }
+  .car-carousel .prev-slide:hover{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   }
   .car-carousel .owl-next {
     right: 0px;
