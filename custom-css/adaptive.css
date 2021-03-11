@@ -16,12 +16,6 @@
   .custom-pills-header li {
     margin: 0 10px;
   }
-  .car-carousel .owl-prev {
-    right: 90px;
-  }
-  .car-carousel .owl-next {
-    right: 40px;
-  }
   .catalog-car:hover, .catalog-car:hover .catalog-car-bar{
     background: #FAD00F;
     justify-content: flex-end;
@@ -106,6 +100,15 @@
   padding: 18px 36px 18px 36px;
   border: 1px solid #FAD00F;
   margin-top: 0;
+  }
+  .slide__announce .more-detailes:hover{
+    border: 1px solid #FAD00F;
+    background: #FAD00F;
+  color: #fff;
+  padding: 18px 36px 18px 36px;
+  }
+  .slide__announce .more-detailes:hover .arrow-more path{
+    fill: #fff;
   }
   .slide__announce .more-detailes .arrow-more{
     transform: scale(1);

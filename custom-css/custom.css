@@ -104,9 +104,26 @@ margin-bottom: 36px;
   text-decoration: none;
   margin-top: 40px;
   }
+  .slide__announce .more-detailes:hover{
+    border: none;
+    background: none;
+    border-radius: 50px;
+    font-style: normal;
+  font-weight: normal;
+  line-height: 132.19%;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: #858585;
+  padding: 10px 0px;
+  text-decoration: none;
+  }
   .slide__announce .more-detailes .arrow-more{
     transform: scale(0.6);
     margin-left: 6px;
+    margin-top: -2px;
+  }
+  .slide__announce .more-detailes:hover .arrow-more path{
+    fill: #858585;
   }
 
 
@@ -725,7 +742,7 @@ color: #fff;
 }
 .btn-arrow{
   transform: scale(0.7);
-  margin-top: -3.5px;
+  margin-top: -1.5px;
   margin-left: 12px;
 }
 .custom-control:focus::-webkit-input-placeholder { color:transparent; }
