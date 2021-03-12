@@ -134,6 +134,9 @@ display: none;
   left: 0;
   transition: all ease-in 0.5s;
 }
+.super_sub li{
+  margin: 12px 0;
+}
 .super_menu.hidden_menu{
   left: -100%;
   transition: all ease-in 0.5s;
