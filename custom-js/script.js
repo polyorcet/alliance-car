@@ -82,44 +82,12 @@ $(window).resize(function(){
 
 /* == Новое меню == */
 
-$(document).ready(function() { 
-  var windowWidth = $(window).width();
-  if (windowWidth < 1200){
-    $("#topMenu").addClass("super_menu");
-    $("#topMenu").addClass("hidden_menu");
-    $(".nav-item").removeClass("dropdown");
-    $(".dropdown-menu-custom").removeClass("dropdown-menu");
-  }
-  else {
-    $("#topMenu").removeClass("super_menu");
-    $("#topMenu").removeClass("hidden_menu");
-    $(".nav-item").addClass("dropdown");
-    $(".dropdown-menu-custom").addClass("dropdown-menu");
-  } 
-$(window).resize(function(){
-  var windowWidth = $(window).width();
-  if (windowWidth < 1200){
-    $("#topMenu").addClass("super_menu");
-    $("#topMenu").addClass("hidden_menu");
-    $(".nav-item").removeClass("dropdown");
-    $(".dropdown-menu-custom").removeClass("dropdown-menu");
-  }
-  else {
-    $("#topMenu").removeClass("super_menu");
-    $("#topMenu").removeClass("hidden_menu");
-    $(".nav-item").addClass("dropdown");
-    $(".dropdown-menu-custom").addClass("dropdown-menu");
-  }
-  });
-});
-
 $(document).ready(function(){
-  
   $(".super_menu_toggler").click(function(){
+
     $(this).toggleClass('collapsed');
     $(".super_menu").toggleClass('hidden_menu');
   });
-
   /* Подменю */
   $(".super_menu_subtoggle").click(function(){
     $('#topmenuContacts').toggle();
@@ -130,9 +98,9 @@ $(document).ready(function(){
     }
     $(".nav-link_back span").text('назад');
     $('.super_menu .nav-link').not(this).each(function(){
-      $(this).fadeToggle(300);
-   });
-    
+      /*$(this).fadeToggle(300);*/
+      $(this).toggle();
+   });    
     if ($(this).next(".super_sub").hasClass("hidden_sub")) {
           $(this).next(".super_sub").show().removeClass('hidden_sub');
         } else {
@@ -141,7 +109,5 @@ $(document).ready(function(){
 /* $(this).next(".super_sub").toggleClass('hidden_sub'); */
   });
   /* Подменю */
-
 });
-
 /* == Новое меню == */

@@ -576,7 +576,7 @@ margin: 4px;
 .custom-pills-header .nav-link:hover{
   color: #FFF;
 }
-}om-pills .nav-link.active{
+.custom-pills .nav-link.active{
 border: #FFD335 solid 1px;
 background: none;
 color: #fff;

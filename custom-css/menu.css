@@ -23,6 +23,9 @@ transform: rotate(90deg);
 .custom-navbar__nav-link:hover{
   color: #FAD00F;
 }
+.dropdown-menu{
+  padding: 0;
+}
 .dropdown-menu-custom a{
   color: #BFBFBF;
   text-transform: uppercase;
@@ -118,13 +121,19 @@ display: none;
 .super_menu{
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 80px);
+  overflow: scroll;
   top: 80px;
   background: rgba(0,0,0, 0.9);
   left: 0;
   box-sizing: border-box;
   padding: 20px;
   transition: all ease-in 0.5s;
+}
+body.menu-opened{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
 }
 .super_menu .super_menu_li{
   position: relative;
@@ -141,8 +150,16 @@ display: none;
   left: -100%;
   transition: all ease-in 0.5s;
 }
+.super_menu{
+  left: 0;
+  transition: all ease-in 0.5s;
+}
 .super_menu .hidden_sub{
   left: -100%;
+  transition: all ease-in 0.5s;
+}
+.super_menu .super_sub{
+  left: 0;
   transition: all ease-in 0.5s;
 }
 .super_menu_subtoggle .drop-arrow{
