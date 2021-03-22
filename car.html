@@ -10,6 +10,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="custom-css/owl.carousel.min.css" rel="stylesheet">
   <link href="custom-css/owl.theme.default.css" rel="stylesheet">
+  <link href="custom-css/lightbox.css" rel="stylesheet">
   <link href="custom-css/custom.css" rel="stylesheet">
   <link href="custom-css/menu.css" rel="stylesheet">
   <link href="custom-css/catalog.css" rel="stylesheet">
@@ -25,7 +26,7 @@
 
     <nav class="navbar navbar-expand-xl fixed-top custom-navbar">
 
-      <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+      <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt=""></a>
 
       <a href="#" class="super_menu_toggler collapsed">
         <div class="hamburger-bar"></div>
@@ -237,18 +238,12 @@
     <div class="container-fluid p-0">
 
       <div class="row owl-carousel car-carousel owl-theme m-0">
-        <div class="car-preview">
-          <img src="img/car-gallery-thumb01.png" alt="">
-        </div>
-        <div class="car-preview">
-          <img src="img/car-gallery-thumb02.png" alt="">
-        </div>
-        <div class="car-preview">
-          <img src="img/car-gallery-thumb03.png" alt="">
-        </div>
-        <div class="car-preview">
-          <img src="img/car-gallery-thumb01.png" alt="">
-        </div>
+
+          <a class="car-preview" href="img/Lamborghini-Big.jpg" data-lightbox="roadtrip"><img src="img/car-gallery-thumb01.png" alt=""></a>
+          <a class="car-preview" href="img/Lamborghini-Big.jpg" data-lightbox="roadtrip"><img src="img/car-gallery-thumb02.png" alt=""></a>
+          <a class="car-preview" href="img/Lamborghini-Big.jpg" data-lightbox="roadtrip"><img src="img/car-gallery-thumb03.png" alt=""></a>
+          <a class="car-preview" href="img/Lamborghini-Big.jpg" data-lightbox="roadtrip"><img src="img/car-gallery-thumb01.png" alt=""></a>
+
       </div>
 
     </div>
@@ -260,23 +255,23 @@
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="advantage car-advantage d-flex flex-column justify-content-end"><span>Доставляем 24/7</span>
+          <div class="advantage car-advantage d-flex flex-column"><span>Доставляем 24/7</span>
             <p>в любую точку Москвы и области</p>
           </div>
 
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="advantage car-advantage d-flex flex-column justify-content-end"><span>БОЛЬШОЙ ЛИМИТ</span>
+          <div class="advantage car-advantage d-flex flex-column"><span>БОЛЬШОЙ ЛИМИТ</span>
             <p>по пробегу: 300 километров</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="advantage car-advantage d-flex flex-column justify-content-end"><span>СТРАХОВАНИЕ</span>
+          <div class="advantage car-advantage d-flex flex-column"><span>СТРАХОВАНИЕ</span>
             <p>в любую точку Москвы и области</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="advantage car-advantage d-flex flex-column justify-content-end"><span>КРУГЛОСУТОЧНАЯ
+          <div class="advantage car-advantage d-flex flex-column"><span>КРУГЛОСУТОЧНАЯ
               ПОДДЕРЖКА</span>
             <p>по всем вопросам</p>
           </div>
@@ -289,7 +284,7 @@
   <!-- Условия -->
   <section id="car-conditions" class="car-conditions">
     <div class="container">
-      <div class="row justify-content-between flex-column-reverse flex-sm-row">
+      <div class="row justify-content-between flex-column flex-sm-row">
         <div class="col-12 col-lg-6">
           <div>
             <div class="inner-section__header">
@@ -340,6 +335,41 @@
   <!-- Условия -->
 
 
+    <!-- Текстовый блок -->
+    <section id="car-conditions" class="car-conditions">
+      <div class="container">
+        <div class="row justify-content-between flex-column-reverse flex-sm-row">
+          <div class="col-12 col-lg-4">
+          <img src="img/design-image-lamba.jpg" class="content-img" alt="">
+          </div>
+          <div class="col-12 col-lg-7">
+          <h4>Встречаем Lamborghini Gallardo</h4>
+          <p>Название Lamborghini Gallardo происходит от испанской породы боевых быков, которая была выведена скотоводом Франсиско Гайярдо в XVIII веке. И уж поверьте, эта зверюга на все 100% вскружит Вам голову адреналином благодаря мощному двигателю 560 лошадиных сил, полному приводу и разгону 3,7 секунд до 100 км/ч.</p>
+          <p>Ощутите совершенно дикую динамику и восторженные взгляды прохожих. Порой кажется, что известных людей и кинозвезд фотографируют не так часто, как белую Lamborghini!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Текстовый блок -->
+
+
+  <!-- Видео -->
+  <div class="section dark">
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col p-0">
+          <video src="img/Lamborghini Gallardo.mp4" autoplay controls poster="posterimage.jpg">
+          </video>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Видео -->
+
+
+
   <!-- Форма заявки -->
   <section class="form-section">
     <div class="container">
@@ -370,7 +400,6 @@
     </div>
   </section>
   <!-- Форма заявки -->
-
 
 
   <!-- Футер -->
@@ -447,6 +476,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="custom-js/anime.min.js"></script>
   <script src="custom-js/owl.carousel.min.js"></script>
+  <script src="custom-js/lightbox.js"></script>
   <script src="custom-js/script.js"></script>
 
 

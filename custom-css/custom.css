@@ -182,9 +182,9 @@ margin-bottom: 36px;
     display: inline-block;
   }
   .title-rent-price{
-    font-size: 40px;
+    font-size: 32px;
     color: #FAD00F;
-    line-height: 120px;
+    display: block;
   }
   .header__car-price{
     display: none;
@@ -432,6 +432,28 @@ transition: all 0.3s ease-in-out;
     top: 0;
     height: 100%;
   }
+
+
+  .car-slide__body{
+    flex-direction: column;
+  }
+  .car-slider-navs{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+  }
+  .car-slide__body .slide__info {
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
   .custom-carousel-control{
     display: inline-flex;
     justify-content: center;
@@ -627,6 +649,7 @@ border-radius: 6px;
     margin-top: -20px;
   }
 .car-preview{
+  display: block;
   opacity: 0.8;
 }
 .car-preview img{
@@ -640,6 +663,9 @@ border-radius: 6px;
   height: 150px;
 }
 .car-conditions{
+  padding: 100px 0 80px 0;
+}
+.simple-text-block{
   padding: 100px 0 120px 0;
 }
   .car-conditions h4{
@@ -654,8 +680,8 @@ border-radius: 6px;
 box-sizing: border-box;
 font-weight: bold;
 font-size: 24px;
-margin-bottom: 60px;
 width: 100%;
+margin-top: 60px;
   }
   .price-tag span{
     font-weight: bold;
@@ -817,9 +843,15 @@ color: #fff;
   width: 100%;
 }
 .section-slider-title{
-font-size: 70px;
+font-size: 42px;
 line-height: 124.5%;
 text-transform: uppercase;
 margin-bottom: 80px;
 font-weight: bold;
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

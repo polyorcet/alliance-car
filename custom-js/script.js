@@ -90,6 +90,8 @@ $(document).ready(function(){
   });
   /* Подменю */
   $(".super_menu_subtoggle").click(function(){
+    var windowWidth = $('body').innerWidth();
+    if(windowWidth < 1200){
     $('#topmenuContacts').toggle();
     var textlink = $(this).data('textlink');
     $(this).toggleClass('nav-link_back');
@@ -106,6 +108,10 @@ $(document).ready(function(){
         } else {
           $(this).next(".super_sub").hide().addClass('hidden_sub');
         }
+
+      } else {
+        location.href = this.href;
+      }
 /* $(this).next(".super_sub").toggleClass('hidden_sub'); */
   });
   /* Подменю */

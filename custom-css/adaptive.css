@@ -9,6 +9,9 @@
     }
 }
 @media (min-width: 576px){
+  .price-tag{
+margin-top: 0;
+  }
   .custom-pills-header .header__button {
     font-size: 16px;
     padding: 10px 14px 8px 14px;
@@ -420,12 +423,17 @@ margin-top: 60px;
       }
       .form-section-wedding{
         background: #E5E5E5 url(../img/form-img-wedding.jpg);
+        background-repeat: no-repeat;
+        background-position: 150% 50%;
       }
       .car-advantage {
-        height: 60%;
+        height: 80%;
         margin: 4% 0 6% 0;
         padding: 0 6px;
     }
+    .section-slider-title{
+      font-size: 70px;
+      }
 }
 
 @media (min-width: 1200px){
