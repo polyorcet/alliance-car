@@ -1,4 +1,17 @@
 
+@media (max-width: 575px){
+  .car-slide__body .slide__image {
+    width: 100%;
+    margin-right: 0;
+}
+.car-slide__body .slide__info{
+  padding: 40px 20px; 
+}
+.car-slide__body .slide__title{
+  margin-bottom: 20px;
+}
+}
+
 @media (min-width: 425px){
   .hero, .hero-slide{
     height: 1px;
@@ -8,9 +21,13 @@
     line-height: 1.8;
     }
 }
+
 @media (min-width: 576px){
   .price-tag{
 margin-top: 0;
+  }
+  .car-slide__body {
+    flex-direction: row;
   }
   .custom-pills-header .header__button {
     font-size: 16px;
@@ -54,6 +71,7 @@ margin-top: 0;
           z-index: 100;
         }
         .car-slider-navs{
+          position: relative;
           left: 0;
           top: 0;
         }
@@ -209,11 +227,15 @@ display: none;
   .carousel-item-custom{
     height: 500px;
    }
+   .cars-slider{
+     height: auto;
+   }
    .slide__info {
     padding-top: 120px;
     padding-bottom: 40px;
     flex: 0 0 46%;
 }
+
 .slide__image{
     width: 50%;
     flex: 0 0 50%;
@@ -224,6 +246,12 @@ display: none;
     width: 100px;
     top: 58px;
   }
+  .car-slider-navs{
+    left: 0;
+    top: 0;
+  }
+
+
   .car-slider-navs{
     top: 0;
   }
@@ -416,6 +444,9 @@ margin-top: 60px;
     .carousel-item-custom{
         height: 700px;
        }
+       .cars-slider{
+         height: auto;
+       }
        .form-section{
         background: #E5E5E5 url(../img/form-img.jpg);
         background-repeat: no-repeat;
@@ -561,7 +592,7 @@ margin-top: 60px;
         height: 800px;
        }
        .cars-slider{
-        height: 540px;
+         height: auto;
        }
        .slide__announce {
         font-weight: 300;

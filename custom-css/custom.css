@@ -364,8 +364,8 @@ transition: all 0.3s ease-in-out;
     align-items: stretch;
     height: 100%;
 }
-.car-slide__body .slide__image img{
-  width: 100%;
+.car-slide__body{
+     height: auto;
 }
 .slide__image{
   width: 40%;
@@ -389,6 +389,11 @@ transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   color: #1D1C1C;
   }
+
+  /* Слайдер на автомобилей для аренды */
+  .car-slide__body .slide__image img{
+    width: 100%;
+  }
   .car-slide__body .slide__image{
     width: 40%;
     margin-right: 4%;
@@ -396,7 +401,6 @@ transition: all 0.3s ease-in-out;
     background-size: cover;
     background-position: center;
   }
-
   .cars-slider .slide__title{
     line-height: 36px;
     }
@@ -404,7 +408,9 @@ transition: all 0.3s ease-in-out;
     font-size: 36px;
     text-transform: none;
     color: #1D1C1C;
+    text-decoration: underline !important;
     }
+
   .slide__announce{
   font-weight: 300;
   font-size: 16px;
@@ -446,12 +452,10 @@ transition: all 0.3s ease-in-out;
   }
   .car-slide__body .slide__info {
     box-sizing: border-box;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 0 auto;
 }
 
   .custom-carousel-control{
@@ -474,6 +478,42 @@ transition: all 0.3s ease-in-out;
   .custom-carousel-control-next svg{
   transform: rotate(180deg);
   }
+
+  .car-slider-navs{
+    height: 46px;
+  }
+  .car-slider-navs .custom-carousel-control{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background: none;
+    border: 1px solid #858585;
+  }
+  .car-slider-navs .custom-carousel-control path{
+    fill: #1D1C1C;
+  }
+
+  .cars-slider .slide__announce .more-detailes {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 132.19%;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    color: #1D1C1C;
+    padding: 10px 0px;
+    text-decoration: none;
+    margin-top: 10px;
+    border: 1px solid #FAD00F;
+    background: #FAD00F;
+  padding: 12px 24px 12px 24px;
+}
 
 
 
@@ -668,7 +708,7 @@ border-radius: 6px;
 .simple-text-block{
   padding: 100px 0 120px 0;
 }
-  .car-conditions h4{
+  .content_h4{
     font-size: 40px;
   }
 .prices-row{
