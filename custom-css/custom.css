@@ -25,14 +25,14 @@ margin-bottom: 36px;
   text-transform: uppercase;
   display: block;
   }
-.simple-content a{
+.simple-content a, .simple-content li a{
   color: #FAD00F;
 }
 .simple-content h3{
   margin-bottom: 24px;
   }
   .simple-list li{
-    background: url(../img/romb.svg) left top 6px no-repeat;
+    background: url(../img/marker.svg) left top 2px no-repeat;
     padding-left: 30px;
     margin-bottom: 12px;;
     }
