@@ -240,7 +240,7 @@ margin-bottom: 36px;
   .header__button-wrapper{
     align-self: center;
     flex: 0 1 auto;
-    z-index: 1000;
+    /*z-index: 1000;*/
   }
   .header__button-wrapper-carpage{
     display: none;
