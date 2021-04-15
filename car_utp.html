@@ -10,6 +10,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="custom-css/owl.carousel.min.css" rel="stylesheet">
   <link href="custom-css/owl.theme.default.css" rel="stylesheet">
+  <link href="custom-css/lightbox.css" rel="stylesheet">
   <link href="custom-css/custom.css" rel="stylesheet">
   <link href="custom-css/menu.css" rel="stylesheet">
   <link href="custom-css/catalog.css" rel="stylesheet">
@@ -215,16 +216,21 @@
             </div>
 
             <div class="header__title header__title-car">
-              <div class="car-title__sub"><div>Аренда спорткара в Москве</div></div>
+              <div class="car-title__sub"><div>VIP-поездки на</div></div>
               <h1 class="car-page__title">Lamborghini</h1>
               <div class="car-model">
                 Gallardo
               </div>
               <div class="header__car-price">от 29 000 ₽/сутки</div>
             </div>
+
             <div class="header__button-wrapper header__button-wrapper-carpage">
-            <a class="header__button" href="#">
+            <a class="header__button" href="#" style="margin: 0 4px;">
               <span>Арендовать</span>
+              <div class="arrow-next"></div>
+            </a>
+            <a class="header__button" href="car.html" style="margin: 0 4px;">
+              <span>Авто без водителя</span>
               <div class="arrow-next"><svg width="13" height="21" viewBox="0 0 13 21" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -232,7 +238,9 @@
                     fill="white" />
                 </svg></div>
             </a>
+
           </div>
+
           </div>
         </div>
       </div>
@@ -263,112 +271,134 @@
 
 
 <!-- Галерея -->
-  <section id="car-gallery" class="custom-dark">
+<section id="car-gallery" class="custom-dark">
 
-    <div class="container-fluid p-0">
+  <div class="container-fluid p-0">
 
-      <div class="row owl-carousel car-carousel owl-theme m-0">
-        <div class="car-preview">
-          <img src="img/car-gallery-thumb01.png" alt="">
-        </div>
-        <div class="car-preview">
-          <img src="img/car-gallery-thumb02.png" alt="">
-        </div>
-        <div class="car-preview">
-          <img src="img/car-gallery-thumb03.png" alt="">
-        </div>
-        <div class="car-preview">
-          <img src="img/car-gallery-thumb01.png" alt="">
-        </div>
-      </div>
+    <div class="row owl-carousel car-carousel owl-theme m-0">
+
+        <a class="car-preview" href="img/Lamborghini-Big.jpg" data-lightbox="roadtrip"><img src="img/car-gallery-thumb01.png" alt=""></a>
+        <a class="car-preview" href="img/Lamborghini-Big.jpg" data-lightbox="roadtrip"><img src="img/car-gallery-thumb02.png" alt=""></a>
+        <a class="car-preview" href="img/Lamborghini-Big.jpg" data-lightbox="roadtrip"><img src="img/car-gallery-thumb03.png" alt=""></a>
+        <a class="car-preview" href="img/Lamborghini-Big.jpg" data-lightbox="roadtrip"><img src="img/car-gallery-thumb01.png" alt=""></a>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 <!-- Галерея -->
 
   <section id="car-promo" class="car-promo custom-dark">
     <div class="container h-100">
       <div class="row h-100">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="advantage car-advantage d-flex flex-column justify-content-end"><span>Доставляем 24/7</span>
-            <p>в любую точку Москвы и области</p>
+        <div class="col-12 col-md-4 col-lg-4">
+          <div class="advantage car-advantage d-flex flex-column justify-content-start"><span>Подача 24/7</span>
           </div>
 
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="advantage car-advantage d-flex flex-column justify-content-end"><span>БОЛЬШОЙ ЛИМИТ</span>
-            <p>по пробегу: 300 километров</p>
+        <div class="col-12 col-md-4 col-lg-4">
+          <div class="advantage car-advantage d-flex flex-column justify-content-start"><span>Опытные водители-телохранители</span>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="advantage car-advantage d-flex flex-column justify-content-end"><span>СТРАХОВАНИЕ</span>
-            <p>в любую точку Москвы и области</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="advantage car-advantage d-flex flex-column justify-content-end"><span>КРУГЛОСУТОЧНАЯ
-              ПОДДЕРЖКА</span>
-            <p>по всем вопросам</p>
+        <div class="col-12 col-md-4 col-lg-4">
+          <div class="advantage car-advantage d-flex flex-column justify-content-start"><span>Идеальное состояние автомобилей</span>
           </div>
         </div>
       </div>
 
     </div>
   </section>
+
+
+
 
   <!-- Условия -->
   <section id="car-conditions" class="car-conditions">
     <div class="container">
       <div class="row justify-content-between flex-column-reverse flex-sm-row">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-7">
           <div>
             <div class="inner-section__header">
-              <h4>Условия</h4>
-              <span class="inner-section__subheader">Стоимость аренды Lamborghini Gallardo </span>
+              <h4>Тарифы</h4>
+              <span class="inner-section__subheader">Стоимость аренды Lamborghini Gallardo с водителем</span>
             </div>
             
 
             <div class="prices-table">
               <div class="prices-row d-flex">
-                <div class="period">1-7 суток</div>
+                <div class="period">В пределах садового кольца</div>
                 <div class="price-for-period d-flex">
-                  <span>50 000 руб.</span>
+                  <span>10 000 руб./час</span>
                 </div>
               </div>
               <div class="prices-row d-flex">
-                <div class="period">7-14 суток</div>
+                <div class="period">В пределах ТТК</div>
                 <div class="price-for-period d-flex">
-                  <span>43 000 руб.</span>
+                  <span>12 000 руб./час</span>
                 </div>
               </div>
               <div class="prices-row d-flex">
-                <div class="period">14-30 суток</div>
+                <div class="period">В пределах МКАД</div>
                 <div class="price-for-period d-flex">
-                  <span>35 000 руб.</span>
+                  <span>14 000 руб./час</span>
                 </div>
               </div>
               <div class="prices-row d-flex">
-                <div class="period">от 30 суток</div>
+                <div class="period">В пределах ЦКАД</div>
                 <div class="price-for-period d-flex">
-                  <span>29 000 руб.</span>
+                  <span>16 000 руб./час</span>
+                </div>
+              </div>
+              <div class="prices-row d-flex">
+                <div class="period">Далее</div>
+                <div class="price-for-period d-flex">
+                  <span>150 руб./минута</span>
+                </div>
+              </div>
+              <div class="prices-row d-flex">
+                <div class="period">Трансфер в/из аэропорта</div>
+                <div class="price-for-period d-flex">
+                  <span>30 000 руб.</span>
                 </div>
               </div>
             </div>
+
           </div>
 
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-3">
           <div class="price-tag">
-            от <span>29 000</span> ₽/сутки
-            <p>Обеспечительный платеж 150 000 руб.
-              Возвращается в день возврата автомобиля.</p>
+            от <span style="font-size: 34px;">10 000</span> ₽/час
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- Условия -->
+
+
+
+      <!-- Контент -->
+      <section class="mb-5 mt-5 simple-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-10">
+              <h3>Поездки с персональным водителем на Lamborghini для любых случаев</h3>
+              <p>Предлагаем услуги персональных перевозок класса VIP для различных случаев:</p>
+
+              <ul class="simple-list">
+                <li><span>Встреча бизнес-партнера в аэропорту.</span> Alliance Rental поможет вам предоставить комфортабельный трансфер высокого уровня.</li>
+                <li><span>Деловые переговоры.</span> Первое впечатление о потенциальном партнере многого стоит. И мы вам поможем создать его.</li>
+                <li><span>Ежедневный трансфер в офис/домой ТОП-руководителей компании.</span> Предлагаем услугу корпоративных перевозок на индивидуальных условиях.</li>
+                <li><span>Торжественное мероприятие.</span> ВОщутите восторг и великолепие в важный и особенный день от поездки в элитном авто с настоящим профессионалом за рулем.</li>
+                <li><span>Встреча выпускников, корпоратив и другие мероприятия.</span> С Alliance Rental ваше появление в компании на премиальном автомобиле будет эффектным и запоминающимся.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 
   <!-- Форма заявки -->
@@ -376,7 +406,7 @@
     <div class="container">
       <div class="row justify-content-center justify-content-md-start">
         <div class="col-12 col-md-8 col-lg-4">
-          <h4 class="form-title">Арендовать спорткар</h4>
+          <h4 class="form-title">Арендовать с&nbsp;водителем</h4>
           <form>
             <div class="form-group custom-form-group">
               <input type="text" class="form-control custom-control" id="inputName" placeholder="Ваше имя">
@@ -478,6 +508,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="custom-js/anime.min.js"></script>
   <script src="custom-js/owl.carousel.min.js"></script>
+  <script src="custom-js/lightbox.js"></script>
   <script src="custom-js/script.js"></script>
 
 
