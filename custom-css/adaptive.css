@@ -18,7 +18,7 @@
   }
   .simple-content p, .simple-content li{
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.8; 
     }
 }
 
@@ -191,12 +191,9 @@ margin-top: 0;
   .catalog__model{
     font-size: 30px;
     }
-    .header__title-car{
-      flex-direction: row;
-      padding: 0 0;
-    }
+
   .header__title-car h1{
-    font-size: 120px;
+    font-size: 100px;
   }
 .advantages{
     height: 732px;
@@ -263,9 +260,7 @@ display: none;
   .mainpage-catalog__title h3{
     font-size: 50px;
   }
-  .car-model{
-    display: none;
-  }
+  
   .slider-promoblock{
     display: flex;
     flex: 1 0 auto;
@@ -293,6 +288,7 @@ display: none;
 }
 
 @media (min-width: 992px){
+
   .car-carousel .owl-nav button {
     top: 0;
     bottom: auto;
@@ -323,23 +319,14 @@ display: none;
   }
 
   .header__title-car{
-    justify-content: center;
+    justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 40px;
   }
-  .car-title__sub{
-    justify-content: flex-end;
-    display: flex;
-    font-weight: 300;
-font-size: 24px;
-line-height: 132.19%;
-text-align: right;
-color: #FFFFFF;
-  }
-  .car-title__sub div{
-    width: 400px;
-  }
+
+  
   .header__car-price{
     display: block;
     font-size: 40px;
@@ -348,12 +335,15 @@ color: #FFFFFF;
      text-align: right;
   }
   .car-model-wide{
-    text-transform: uppercase;
-    margin-top: -50px;
+    margin-top: -10px;
     font-size: 60px;
-    color: #fff;
-    display: inline-block;
   }
+
+  .car-title__sub{
+    font-size: 24px;
+    line-height: 132.19%;
+  }
+
   .header__body-layer{
     position: absolute;
     width: 80%;
@@ -384,7 +374,7 @@ margin-top: 60px;
     font-size: 24px;
   }
   .header__title-car h1{
-    font-size: 160px;
+    font-size: 110px;
   }
     .navbar-expand-lg .navbar-nav .custom-navbar__nav-link {
         padding-right: 1rem;
@@ -539,7 +529,8 @@ margin-top: 60px;
     height: 60px;
   }
   .header__title-car h1{
-    font-size: 200px;
+    font-size: 110px;
+    padding-top: 20px;
   }
     .custom-navbar{
         background: rgba(6,6,6,0.4);
@@ -645,7 +636,7 @@ margin-top: 60px;
 
 @media (min-width: 1500px){
   .header__title-car h1{
-    font-size: 240px;
+    font-size: 110px;
   }
     .sertificate{
         height: 700px;
@@ -665,4 +656,19 @@ margin-top: 60px;
       .services__header{
         display: block;
       }
+}
+@media (max-width:1200px) {
+  .charDiv {
+    padding-left: 22px;
+    border-left: 1px solid #FFD335;
+}
+}
+@media (max-width:992px) {
+  .charDiv_container {
+    display: none;
+}
+
+.car-conditions.character-block {
+  display: block;
+}
 }

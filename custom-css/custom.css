@@ -213,6 +213,13 @@ margin-bottom: 36px;
     align-items: center;
     margin-bottom: 30px;
   }
+  .car-model-wide{
+    text-transform: uppercase;
+    margin-top: -10px;
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+  }
   .header__title-car{
     display: inline-flex;
     flex-direction: column;
@@ -697,7 +704,7 @@ margin: 4px;
   color: #FFD335;
 }
 .custom-pills-header .nav-link:hover{
-  color: #FFF;
+  color: #1D1C1C;
 }
 .custom-pills .nav-link.active{
 border: #FFD335 solid 1px;
@@ -707,6 +714,7 @@ border-radius: 6px;
 }
 .custom-pills-header .nav-link.active{
   background: #FFD335;
+  color: #1D1C1C;
   }
 .custom-pills-header .nav-link, .custom-pills-header .nav-link.active{
   border-radius: 50px;
@@ -736,9 +744,7 @@ border-radius: 6px;
     background-size: cover;
   }
 
-  .car-model-wide{
-    display: none;
-  }
+ 
   .car-model{
     color: #FAD00F;
     text-transform: uppercase;
@@ -824,9 +830,20 @@ background-repeat: repeat-x;
 flex: 1 0 auto;
 display: block;
   }
+
   .car-title__sub{
-display: none;
+    justify-content: flex-start;
+    display: flex;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 132.19%;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 8px;
   }
+  /*.car-title__sub{
+display: none;
+  }*/
 
   /* ФОРМА */
 .form-title{
@@ -962,4 +979,21 @@ video{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.charDiv {
+  margin-top: 200px;
+  padding-left: 22px;
+  border-left: 1px solid #FFD335;
+}
+p.charact {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 132.19%;
+  color: #FFFFFF;
+}
+
+.car-conditions.character-block {
+  display: none;
 }

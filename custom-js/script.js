@@ -65,7 +65,7 @@ $(document).ready(function(){
 
 
 /* == Подстройка титула в шапке - страница авто == */
-$(document).ready(function(){
+/*$(document).ready(function(){
   var mwidth = $(".car-page__title").width();
   $(".car-title__sub").width(mwidth);
   $(".header__car-price").width(mwidth);
@@ -75,7 +75,7 @@ $(window).resize(function(){
   var mwidth = $(".car-page__title").width();
   $(".car-title__sub").width(mwidth);
   $(".header__car-price").width(mwidth);
-});
+});*/
 /* == Подстройка титула в шапке - страница авто == */
 
 
